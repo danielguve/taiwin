@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección Dividida</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+       
+        .image-wrapper img {
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="bg-gray-900">
+
+    <section class="flex h-screen">
+        <!-- Lado izquierdo: Contenido -->
+        <div class="w-1/2 p-12 bg-[#2c0448] text-white flex flex-col justify-center">
+            <div class="description mb-10">
+                <h1 class="text-4xl font-semibold">Get <span class="text-[#c8a9df]">insight</span> that help your business grow.</h1>
+                <p class="text-lg">Discover the benefits of data analytics and make</p>
+                <p class="text-lg">better decisions regarding revenue, customer</p>
+                <p class="text-lg">experience, and overall efficiency.</p>
+            </div>
+            <div class="flex gap-6">
+                <div class="stat-item text-center">
+                    <div class="stat-number text-4xl font-bold">10k+</div>
+                    <div class="stat-label text-xl text-[#e6e6fa]">COMPANIES</div>
+                </div>
+                <div class="stat-item text-center">
+                    <div class="stat-number text-4xl font-bold">314</div>
+                    <div class="stat-label text-xl text-[#e6e6fa]">TEMPLATES</div>
+                </div>
+                <div class="stat-item text-center">
+                    <div class="stat-number text-4xl font-bold">12M+</div>
+                    <div class="stat-label text-xl text-[#e6e6fa]">QUERIES</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lado derecho: Imagen con transparencia -->
+        <div class="w-1/2 relative">
+            <div class="image-wrapper w-full h-full relative">
+                <img src="estaeslaimagendeoficina.jpg" alt="Imagen descriptiva" class="w-full h-full rounded-lg">
+                <div class="overlay absolute top-0 left-0 w-full h-full bg-[#84279180] rounded-lg"></div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
